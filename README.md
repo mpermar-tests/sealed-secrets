@@ -89,14 +89,8 @@ spec:
 Once unsealed this will produce a secret equivalent to this:
 
 ```yaml
-apiVersion: v1
-kind: Secret
-metadata:
-  name: mysecret
-  namespace: mynamespace
-data:
-  provider: vault-1
-  key: /my/secret/path
+provider: vault-1
+key: /my/secret/path
 ```
 
 This normal [kubernetes secret](https://kubernetes.io/docs/concepts/configuration/secret/) will appear in the cluster
